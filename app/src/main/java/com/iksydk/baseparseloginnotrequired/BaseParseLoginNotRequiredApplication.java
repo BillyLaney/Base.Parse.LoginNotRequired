@@ -3,6 +3,7 @@ package com.iksydk.baseparseloginnotrequired;
 import android.app.Application;
 import android.util.Log;
 
+import com.iksydk.baseparseloginnotrequired.Utils.GitProtectedStringManager;
 import com.parse.Parse;
 import com.parse.ParseException;
 import com.parse.ParseInstallation;
@@ -20,7 +21,7 @@ public class BaseParseLoginNotRequiredApplication extends Application
     {
         super.onCreate();
 
-        Parse.initialize(this, "kbNRJSdaS9Fu6dus85lse4phAhFRMOjQlNvTKLkp", "We7TXsvydgCOZzWvYoFi3qb8eueOCvMPGANcQBii");
+        Parse.initialize(this, GitProtectedStringManager.getString(this, "applicationId"), GitProtectedStringManager.getString(this, "clientKey"));
 
         ParseInstallation installation = ParseInstallation.getCurrentInstallation();
 
