@@ -33,7 +33,7 @@ public class BaseParseLoginNotRequiredApplication extends Application
                 if(e == null)
                 {
                     PushService.setDefaultPushCallback(BaseParseLoginNotRequiredApplication.this, MainActivity.class);
-                    Log.e(TAG, "Parse registration success (launch)");
+                    Log.v(TAG, "Parse registration success (launch)");
                 }
                 else
                 {
