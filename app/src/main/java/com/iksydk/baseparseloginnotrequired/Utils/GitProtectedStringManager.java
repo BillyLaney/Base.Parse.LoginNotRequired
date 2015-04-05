@@ -9,6 +9,8 @@ import android.util.Log;
  * it's main purpose is to prevent crashing during debug and can be overwritten to return non production api keys that are not sensitive (aka ones on free trials)
  *
  * It also allows the use of keys that are not compiled into R to be used
+ *
+ * This is not necessarily required for parse but I like it anyway
  */
 public class GitProtectedStringManager
 {
